@@ -4,6 +4,8 @@
    * npm init
    * npm i webpack
    * npm i react
+   * npm i webpack-cli
+
     
 
 
