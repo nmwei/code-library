@@ -1,0 +1,20 @@
+{
+  "name": "code-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config build/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmwei/codeLibrary.git"
+  },
+  "author": "drew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmwei/codeLibrary/issues"
+  },
+  "homepage": "https://github.com/nmwei/codeLibrary#readme"
+}
