@@ -1,4 +1,8 @@
 /**
  * Created by nimengwei on 2018/2/28.
  */
-alert(123);
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App.jsx'
+
+ReactDOM.render(<App/>, document.body)
