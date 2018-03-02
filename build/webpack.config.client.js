@@ -10,9 +10,9 @@ module.exports = {
         app: path.join(__dirname, '../client/app.js')
     },
     output: {
-        filename: '[name].[hash].js',
+        filename: '[name].[hash].js', //name表示app，hash表示hash值
         path: path.join(__dirname, '../dist'),
-        publicPath: ''
+        publicPath: '/public' //指定script标签src属性共有的路径前缀
     },
     module: {
         rules: [
@@ -30,6 +30,8 @@ module.exports = {
         ],
     },
     plugins: [
-        new HTMLPlugin()
+        new HTMLPlugin({
+            template: path.join(__dirname, '../client/template.html')
+        })
     ]
 }

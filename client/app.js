@@ -5,4 +5,5 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App.jsx'
 
-ReactDOM.render(<App/>, document.body)
+//无法进行服务端渲染，服务端没有document.body
+ReactDOM.render(<App/>, document.getElementById('root'))

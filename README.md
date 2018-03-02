@@ -28,7 +28,7 @@
 ###  webpack基础配置
 1. webpack --config build/webpack.config.js  
    表示webpack打包，并指定webpack.config.js为配置文件
-### webpack loader基础配置
+### loader基础配置
 1. 执行命令
     * npm i react-dom -S
     * npm i babel-loader -D  
@@ -39,8 +39,15 @@
     * npm i html-webpack-plugin -D
 2. webpack.config.js中如何配置loader  
     例如:module:{rules:[{test: '/.jsx$/',loader: 'babel-loader'}]}}
-3. html-webpack-plugin包的作用
+3. html-webpack-plugin包的作用  
    生成一个html页面，并且将打包后的js文件注入。
+### 服务端渲染基础配置
+1. 执行命令
+  * npm i rimraf -D
+  * npm i express -S
+2. 服务端渲染的特点  
+  服务端渲染打包配置文件为webpack.config.server.js  
+  服务端没有DOM和html
 
     
 
