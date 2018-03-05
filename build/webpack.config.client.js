@@ -3,6 +3,7 @@
  */
 
 const path = require('path');
+const webpack = require('webpack');
 const HTMLPlugin = require('html-webpack-plugin');
 
 //判断是否是开发环境
@@ -15,7 +16,7 @@ const config = {
     output: {
         filename: '[name].[hash].js', //name表示app，hash表示hash值
         path: path.join(__dirname, '../dist'),
-        publicPath: '/public' //指定script标签src属性共有的路径前缀
+        publicPath: '/public/' //指定script标签src属性共有的路径前缀
     },
     module: {
         rules: [
@@ -40,11 +41,17 @@ const config = {
 }
 
 if(isDev) {
+    config.entry = {
+        app: [
+            'react-hot-loader/patch',
+            path.join(__dirname, '../client/app.js')
+        ]
+    }
     config.devServer = {
         host: '0.0.0.0',
         port:'8888',
         contentBase: path.join(__dirname, '../dist'),
-        //hot: true,
+        hot: true,
         overlay: {
             errors: true //出现错误时，在页面展示
         },
@@ -53,6 +60,7 @@ if(isDev) {
             index: '/public/index.html'
         }
     }
+    config.plugins.push(new webpack.HotModuleReplacementPlugin())
 }
 
 module.exports = config

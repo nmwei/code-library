@@ -52,6 +52,9 @@
 1. 执行命令
   npm i webpack-dev-server -D
   npm i cross-env -D 
+### hot-module-replacement配置
+1. 执行命令
+  npm i react-hot-loader -D
   
 
     
