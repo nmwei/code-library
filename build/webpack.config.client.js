@@ -5,7 +5,10 @@
 const path = require('path');
 const HTMLPlugin = require('html-webpack-plugin');
 
-module.exports = {
+//判断是否是开发环境
+const isDev = process.env.NODE_ENV === 'development';
+
+const config = {
     entry: {
         app: path.join(__dirname, '../client/app.js')
     },
@@ -35,3 +38,21 @@ module.exports = {
         })
     ]
 }
+
+if(isDev) {
+    config.devServer = {
+        host: '0.0.0.0',
+        port:'8888',
+        contentBase: path.join(__dirname, '../dist'),
+        //hot: true,
+        overlay: {
+            errors: true //出现错误时，在页面展示
+        },
+        publicPath: '/public',
+        historyApiFallback: {
+            index: '/public/index.html'
+        }
+    }
+}
+
+module.exports = config

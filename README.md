@@ -48,6 +48,11 @@
 2. 服务端渲染的特点  
   服务端渲染打包配置文件为webpack.config.server.js  
   服务端没有DOM和html
+### webpack-dev-server配置
+1. 执行命令
+  npm i webpack-dev-server -D
+  npm i cross-env -D 
+  
 
     
 

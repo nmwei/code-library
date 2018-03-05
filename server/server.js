@@ -18,10 +18,10 @@ app.use('/public', express.static(path.join(__dirname, '../dist')))
 app.get('*', function (req, res) {
     //浏览器发送的任何请求服务器端都返回服务端渲染的代码
     const appString = ReactSSR.renderToString(serverEntry)
-    res.send(template.replace('<app></app>', appString))
+    res.send(template.replace('<!--app-->', appString))
 })
 
 app.listen(3333, function () {
-    console.log("server is listening 3333")
+    console.log("http://localhost:3333/");
 })
 
