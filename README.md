@@ -72,7 +72,9 @@
   npm i eslint-plugin-promise -D
   npm i eslint-plugin-react -D 
   npm i eslint-plugin-standard -D 
-  npm i extract-text-webpack-plugin -D 
+  npm i extract-text-webpack-plugin -D
+  npm i husky -D
+
    
 
 
