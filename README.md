@@ -55,6 +55,13 @@
 ### hot-module-replacement配置
 1. 执行命令
   npm i react-hot-loader -D
+### 开发时的服务端渲染
+1. 执行命令
+  npm i axios -S
+  npm i memory-fs -D
+  npm i http-proxy-middleware -D
+
+
   
 
     
