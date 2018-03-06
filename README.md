@@ -60,6 +60,20 @@
   npm i axios -S
   npm i memory-fs -D
   npm i http-proxy-middleware -D
+### eslint and editorconfig  
+1. 执行命令  
+  npm i eslint babel-eslint -D
+  npm i eslint-config-airbnb -D
+  npm i eslint-config-standard -D 
+  npm i eslint-loader -D 
+  npm i eslint-plugin-import -D 
+  npm i eslint-plugin-jsx-a11y -D 
+  npm i eslint-plugin-node -D 
+  npm i eslint-plugin-promise -D
+  npm i eslint-plugin-react -D 
+  npm i eslint-plugin-standard -D 
+  npm i extract-text-webpack-plugin -D 
+   
 
 
   
