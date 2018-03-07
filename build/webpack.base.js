@@ -8,6 +8,9 @@ module.exports = {
     path: path.join(__dirname, '../dist'),
     publicPath: '/public/' //指定script标签src属性共有的路径前缀
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
     rules: [
       {
