@@ -74,6 +74,13 @@
   npm i eslint-plugin-standard -D 
   npm i extract-text-webpack-plugin -D
   npm i husky -D
+###   工程架构优化
+1. 执行命令
+  npm i webpack-merge -D 
+  npm i serve-favicon -S
+  npm i nodemon -D
+
+
 
    
 
